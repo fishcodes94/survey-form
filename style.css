@@ -12,7 +12,7 @@
 
 body {
   line-height: 2.5rem;
-  background-image: url(./language-sky.jpg);
+   background-image: url(./components/language-sky.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
