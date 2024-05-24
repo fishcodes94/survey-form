@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Language Survey Form</h1>
+      <p1 id="description"
+        >Thank you for taking the time to complete this survey</p1
+      >
+    </header>
+
+    <form>
+      <label for="name">Name: </label>
+      <input
+        class="input-box"
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      /><br />
+
+      <label for="email">Email: </label>
+      <input
+        class="input-box"
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      /><br />
+
+      <label for="native-language">What is your native language? </label>
+      <input class="input-box" id="native-language" type="text" required />
+      <br />
+
+      <label for="known-languages">How many languages do you know? </label>
+      <input
+        class="input-box"
+        id="known-languages"
+        type="number"
+        min="1"
+        max="100"
+        required
+      /><br />
+
+      <div class="radio-selection">
+        <label for="learn">
+          Would you recommend this survey to a friend or family member? </label
+        ><br />
+
+        <input id="option1" type="radio" value="option1" name="decisions" />
+        <label for="option1">Definitely</label>
+        <br />
+        <input id="option2" type="radio" value="option2" name="decisions" />
+        <label for="option2">Maybe</label>
+        <br />
+        <input id="option3" type="radio" value="option3" name="decisions" />
+        <label for="option3">No</label>
+        <br />
+      </div>
+
+      <label for="favorite-languages">What is your favorite language?</label>
+      <select class="input-box" id="favorite-languages">
+        <br />
+
+        <option value="Russian">Russian</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Hindi">Hindi</option>
+        <option value="English">English</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Bengali">Bengali</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Korean">Korean</option>
+      </select>
+
+      <fieldset id="language-interest">
+        <legend>Select the languages you are interested in learning</legend>
+
+        <input id="russian" type="checkbox" value="russian" name="language" />
+        <label for="russian">Russian</label><br />
+
+        <input id="mandarin" type="checkbox" value="madarin" name="language" />
+        <label for="mandarin">Mandarin</label><br />
+
+        <input id="english" type="checkbox" value="english" name="language" />
+        <label for="english">English</label><br />
+
+        <input
+          id="portuguese"
+          type="checkbox"
+          value="portuguese"
+          name="language"
+        />
+        <label for="portuguese">Portuguese</label><br />
+
+        <input id="arabic" type="checkbox" value="arabic" name="language" />
+        <label for="arabic">Arabic</label><br />
+
+        <input id="spanish" type="checkbox" value="spanish" name="language" />
+        <label for="spanish">Spanish</label><br />
+
+        <input id="bengali" type="checkbox" value="bengali" name="language" />
+        <label for="bengali">Bengali</label><br />
+
+        <input id="french" type="checkbox" value="french" name="language" />
+        <label for="french">French</label><br />
+
+        <input id="german" type="checkbox" value="german" name="language" />
+        <label for="german">German</label><br />
+
+        <input id="korean" type="checkbox" value="korean" name="korean21" />
+        <label for="korean">Korean</label><br />
+      </fieldset>
+      <label for="comments">Any comments or suggestions?</label><br />
+      <textarea
+        id="comments"
+        placeholder="Enter here"
+        name="comments"
+      ></textarea>
+      <button id="submitBtn">Submit</button><br />
+    </form>
+  </body>
+</html>
